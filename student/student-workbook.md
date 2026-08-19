@@ -9,11 +9,25 @@
 
 You should be comfortable declaring variables, calling functions, using arrays and loops, and creating a basic object literal. You do not need prior experience with callbacks, arrow functions, classes, inheritance, or prototypes.
 
-To verify the course files, run:
+The default classroom setup is a current desktop browser. You do not need Node.js or `npm`.
 
-```bash
-npm test
-```
+Before class, open a new browser tab, enter `about:blank`, and open the JavaScript console:
+
+- Chrome or Edge on macOS: **Command-Option-J**
+- Chrome or Edge on Windows or Linux: **Control-Shift-J**
+- Firefox on macOS: **Command-Option-K**
+- Firefox on Windows or Linux: **Control-Shift-K**
+
+Click the **Console** tab if necessary. Type `1 + 1` next to the `>` prompt and press **Enter**. If you see `2`, you are ready.
+
+During class, copy one `js` code block at a time into the console and press **Enter**. If you type a multiline example by hand, use **Shift-Enter** to start a new line without running the code yet.
+
+Two console behaviors are useful to know:
+
+1. Seeing `undefined` after output from `console.log` is normal. It is usually the return value of `console.log`, not an error.
+2. Some examples build on the preceding code block, so reload only when your instructor says to start fresh. If you see “Identifier has already been declared,” reload the blank page and rerun that example section from its beginning. Clearing the visible console output does not reset declared variables; reloading does.
+
+For each lab, make your changes in the matching file under `exercises/`, then copy that code into a freshly reloaded console to try it. Your instructor will walk through this process before the first exercise.
 
 ## Learning outcomes
 
@@ -721,20 +735,23 @@ The foundation is the same material used throughout the course: functions are va
 
 ## After class
 
-Run the complete examples in order:
+Revisit the examples in this workbook one code block at a time in a freshly reloaded browser console. Before running each block, predict what it will do; afterward, explain the result aloud.
+
+If you already have Node.js 20 or later and want to run the complete self-checking files, open a terminal in the course-materials folder and run them directly:
 
 ```bash
-npm run demo:01
-npm run demo:02
-npm run demo:03
-npm run demo:04
-npm run demo:05
-npm run demo:06
-npm run demo:07
-npm run demo:08
-npm run demo:09
+node --version
+node demos/01-first-class-functions.js
+node demos/02-storing-passing-anonymous.js
+node demos/03-callbacks-higher-order-functions.js
+node demos/04-arrow-functions.js
+node demos/05-arrow-functions-and-this.js
+node demos/06-objects-to-classes.js
+node demos/07-instances-methods-this.js
+node demos/08-static-properties.js
+node demos/09-prototypes-and-inheritance.js
 ```
 
-The six matching solutions are available through `npm run solution:01` through `npm run solution:06`.
+No `npm install` step is needed. The six matching solution files can be run the same way, for example `node solutions/01-function-values.js`.
 
 Then revisit each starter exercise from a blank file and explain every use of parentheses, `this`, `static`, and `extends` aloud. If you can predict a lookup before running the code, you are reasoning from the model rather than memorizing syntax.

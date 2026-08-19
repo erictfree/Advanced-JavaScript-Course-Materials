@@ -1,0 +1,10 @@
+{
+  "name": "advanced-javascript-course-materials",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Learner-facing examples and exercises for the Advanced JavaScript course",
+  "engines": {
+    "node": ">=20"
+  }
+}
